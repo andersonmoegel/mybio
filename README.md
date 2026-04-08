@@ -1,59 +1,92 @@
-# 🌐 Link de Bio - Anderson Moegel
+# Anderson Moegel — Portfólio Profissional
 
-Este é um projeto de página única responsiva (HTML + CSS) criado para servir como **link de bio profissional** do desenvolvedor Anderson Moegel, com foco em automação, desenvolvimento de sistemas e segurança da informação.
+> Site de portfólio pessoal focado em IA Generativa, Automação e Engenharia de Dados.
 
-## ✨ Funcionalidades
+---
 
-* Foto de perfil com animação pulsante
-* Descrição pessoal e badge de disponibilidade
-* Seção de especialidades com ícones (Font Awesome)
-* Links diretos para LinkedIn, GitHub, Instagram e WhatsApp
-* Tema claro/escuro com botão de alternância
-* SEO otimizado com microdados Schema.org
-* Layout adaptado para desktop e mobile
+## 📋 Sobre
 
-## 🛠️ Tecnologias Utilizadas
+Portfólio estático desenvolvido em **HTML, CSS e JavaScript puro**, sem dependências externas de framework. Apresenta a trajetória profissional, projetos, habilidades técnicas, stack tecnológico, certificações e formas de contato de Anderson Moegel — profissional de TI na WEG especializado em automação inteligente e IA generativa.
 
-* **HTML5** sem frameworks
-* **CSS3** com variáveis, animações e media queries
-* **Google Fonts** (Inter)
-* **Font Awesome** para ícones
-* **Schema.org** para microdados estruturados
+---
 
-## 🧾 Estrutura
+## 🗂️ Estrutura do Projeto
 
 ```
-📁 Projeto
-├── index.html        # Página principal (link de bio)
-└── README.md         # Este arquivo de documentação
+portfolio/
+└── index.html    # Arquivo único contendo HTML, CSS e JS
 ```
 
-## 🔗 Links Sociais
+---
 
-* [🔗 LinkedIn](https://www.linkedin.com/in/andersonmoegel/)
-* [💻 GitHub](https://github.com/andersonmoegel)
-* [📷 Instagram](https://www.instagram.com/andersonmoegel/)
-* [📱 WhatsApp](https://wa.me/47992254157)
+## 🎨 Design & Tecnologias
+
+| Recurso | Detalhe |
+|---|---|
+| Fontes | `Syne` (títulos) e `DM Mono` (corpo) via Google Fonts |
+| Paleta | Dark theme com destaque em `#00ffa3` (verde neon) |
+| Layout | CSS Grid e Flexbox responsivos |
+| Efeitos | Noise overlay, grid background, glow radial, pulse-ring animation |
+| Scroll | IntersectionObserver para animações de entrada (`reveal`) |
+| Nav | Sticky com backdrop-filter blur |
+
+---
+
+## 📑 Seções
+
+| # | ID | Conteúdo |
+|---|---|---|
+| 01 | `#biografia` | Trajetória profissional e linha do tempo |
+| 02 | `#projetos` | Cards de projetos com stack e impacto |
+| 03 | `#habilidades` | Grade de competências técnicas |
+| 04 | `#stack` | Stack técnico completo por categoria |
+| 05 | `#formacao` | Certificações agrupadas por ano |
+| 06 | `#contato` | Links sociais, status e formulário |
+
+---
 
 ## 🚀 Como Usar
 
-1. Baixe ou clone este repositório
-2. Edite o `index.html` com seus dados se quiser reutilizar
-3. Publique no GitHub Pages, Netlify ou outro serviço de hospedagem
+Por ser um arquivo HTML estático, basta abrir diretamente no navegador:
 
-## 📸 Preview
+```bash
+# Clone ou baixe o repositório
+git clone https://github.com/andersonmoegel/<repo>.git
 
-![image](https://github.com/user-attachments/assets/0be0d5bd-451f-46d9-846d-808297ef3ec0)
+# Abra no navegador
+open index.html
+```
 
+Ou sirva com qualquer servidor estático:
+
+```bash
+# Python (sem instalação extra)
+python -m http.server 8080
+
+# Node.js (com npx)
+npx serve .
+```
 
 ---
 
-## 👨‍💻 Sobre
+## 🔗 Links
 
-**Anderson Moegel** é desenvolvedor de soluções com foco em eficiência, automação de processos e aplicação de tecnologia em cenários práticos e corporativos.
-
-> "Vamos tirar ideias do papel e botar pra rodar!"
+- **GitHub:** [github.com/andersonmoegel](https://github.com/andersonmoegel)
+- **LinkedIn:** [linkedin.com/in/andersonmoegel](https://www.linkedin.com/in/andersonmoegel/)
+- **Instagram:** [instagram.com/andersonmoegel](https://www.instagram.com/andersonmoegel/)
 
 ---
 
-Feito com 💙 direto do Vale Europeu – SC. 🇧🇷
+## 📌 Projetos em Destaque
+
+- **IA RTR** — Conciliação financeira automatizada com Streamlit, Python e SQL
+- **Consultor Tributário** — Assistente de IA sobre Reforma Tributária (CE 132/2023)
+- **NEXUS IA** — Chat desktop com Python, CustomTkinter e API Groq
+- **Sistema de Gestão de Faturas** — Automação de faturas telecom com OCR
+- **Script de Inventário de Monitores** — Coleta de dados via PowerShell e AD
+
+---
+
+## 📜 Licença
+
+© 2026 Anderson Moegel. Todos os direitos reservados.
