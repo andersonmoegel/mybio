@@ -226,6 +226,7 @@
             top: 0;
             z-index: 100;
             background: rgba(10, 10, 15, 0.85);
+            -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
@@ -731,66 +732,72 @@
             transform: translateY(0);
         }
 
-        /* Ícones sociais: apenas ícones, centralizados perfeitamente */
-        .contact-links {
-            display: flex;
-            flex-direction: row; /* Alinha os ícones horizontalmente */
-            justify-content: center;
-            align-items: center;
-            gap: 16px; /* Espaçamento horizontal entre os ícones */
-            list-style: none;
-            padding: 0;
-        }
-    
-        .contact-links li {
-            margin: 0; /* Remove margens extras */
-        }
-    
-        .contact-links a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px; /* Tamanho fixo para ícone centralizado */
-            height: 60px;
-            padding: 0; /* Remove padding para ícone puro */
-            border: 1px solid var(--border);
-            background: var(--card);
-            border-radius: 12px; /* Leve arredondado para modernidade */
-            transition: all 0.3s ease;
-        }
-    
-        .contact-links a:hover {
-            border-color: var(--accent);
-            background: rgba(0, 255, 163, 0.08);
-            transform: scale(1.1);
-        }
-    
-        .social-logo {
-            width: 24px !important; /* Tamanho ideal: visível, não dominante */
-            height: 24px !important;
-            color: var(--muted);
-            transition: all 0.3s ease;
-        }
-    
-        .social-logo:hover {
-            filter: drop-shadow(0 0 8px rgba(0, 255, 163, 0.6));
-        }
-    
-        /* Mobile: ícones menores, mas centralizados */
-        @media (max-width: 700px) {
-            .contact-links {
-                gap: 12px;
-            }
-            .contact-links a {
-                width: 50px;
-                height: 50px;
-            }
-            .social-logo {
-                width: 20px !important;
-                height: 20px !important;
-            }
-        }
+        /* ── CONTACT (ÍCONES SOCIAIS) ── */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
 
+.contact-links li {
+    margin: 0;
+}
+
+.contact-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    border-color: var(--accent);
+    background: rgba(0, 255, 163, 0.08);
+    transform: scale(1.1);
+}
+
+.social-logo {
+    width: 24px;
+    height: 24px;
+    color: var(--muted);
+    transition: filter 0.3s ease;
+}
+
+.social-logo:hover {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 163, 0.6));
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .contact-links a {
+        width: 50px;
+        height: 50px;
+    }
+    .social-logo {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ── FOOTER LINKS ── */
+.footer-link,
+.footer-link-muted {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link-muted:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 
@@ -1140,11 +1147,12 @@
                         </a>
                     </li>
                 </ul>
+                <div class="form-grid">
         
                 <!-- Form ÚNICO: Coluna direita do grid -->
                 <form method="post" action="mailto:anderson.moegel@exemplo.com" enctype="text/plain" novalidate
                     autocomplete="on">
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                    <div class="form-grid">
                         <div class="form-group">
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" maxlength="50" required placeholder="Seu nome">
@@ -1175,20 +1183,18 @@
                         <button type="reset" class="btn-secondary">↺ Limpar</button>
                     </div>
                 </form>
-            </div> <!-- Fecha .contact-layout -->
-        </section>
-        
-        <!-- FOOTER -->
-        <footer>
-            <div class="wrapper">
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
                 <p class="footer-text">
-                    &copy; 2026 <span class="footer-accent">Anderson Moegel</span> — IA & Engenharia de Automação ·
-                    <a href="https://github.com/andersonmoegel" style="color:var(--muted);text-decoration:none;">GitHub</a> ·
-                    <a href="https://www.linkedin.com/in/andersonmoegel/"
-                        style="color:var(--muted);text-decoration:none;">LinkedIn</a>
-                </p>
-            </div>
-        </footer>
+                    &copy; 2026
+                    <span class="footer-accent">Anderson Moegel</span>
+                    — IA &amp; Engenharia de Automação ·
+                        <a href="https://github.com/andersonmoegel" class="footer-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/andersonmoegel/" class="footer-link">LinkedIn</a>
+                    </p>
+            </footer>
         
         <script>
             // Scroll reveal (mantido)
