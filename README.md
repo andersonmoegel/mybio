@@ -1,12 +1,12 @@
 # Anderson Moegel — Portfólio Profissional
 
-> Portfólio pessoal com foco em **IA Generativa**, **Automação** e **Engenharia de Dados**.
+> Site pessoal com foco em **IA Generativa**, **Automação** e **Engenharia de Dados**.
 
 <p align="left">
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-111315?style=flat&logo=javascript&logoColor=F7DF1E">
-  <img alt="Status" src="https://img.shields.io/badge/status-ativo-2e7d32?style=flat">
+  <img alt="Status" src="https://img.shields.io/badge/status-aberto%20a%20oportunidades-4fcf9c?style=flat">
 </p>
 
 ---
@@ -26,8 +26,8 @@
 
 ## 📋 Sobre
 
-Portfólio estático desenvolvido em **HTML, CSS e JavaScript puro**, sem dependências de framework.  
-Apresenta trajetória profissional, projetos, habilidades técnicas, stack tecnológico, certificações e contato de Anderson Moegel — profissional de TI na **WEG**, com atuação em automação inteligente e IA generativa.
+Site estático desenvolvido em **HTML, CSS e JavaScript puro**, sem dependências de framework.
+Apresenta trajetória profissional, projetos, competências técnicas, stack, formação, certificações e contato de Anderson Moegel — Analista de TI com atuação em **Automação, IA Generativa, Dados, Governança de TI e FinOps Telecom**, com passagem pela **WEG** (até jun/2026) e atualmente **aberto a novas oportunidades**.
 
 ---
 
@@ -44,15 +44,14 @@ portfolio/
 
 | Recurso | Detalhe |
 |---|---|
-| Fonte | `Inter` via Google Fonts |
-| Paleta | Dark theme sóbrio com tons neutros e acentos azul/cinza (`--accent`, `--accent2`) |
+| Fontes | `Fredoka` (títulos e destaques) + `Inter` (texto) via Google Fonts |
+| Paleta | Fundo escuro com gradiente mesh (verde, âmbar e lavanda) e cards em tons pastel (menta, lavanda, pêssego, azul-céu) |
 | Layout | CSS Grid e Flexbox responsivos |
-| Navegação | Navbar sticky com `backdrop-filter` |
-| Animações | `IntersectionObserver` com efeito `reveal` |
-| UX | Botão “voltar ao topo” + botão flutuante de WhatsApp |
-| Acessibilidade | Skip link, foco visível (`:focus-visible`) e suporte a `prefers-reduced-motion` |
-
-> O visual atual foi simplificado para uma estética mais clean e profissional.
+| Navegação | Menu em pílula flutuante, fixo no topo, com item ativo destacado conforme o scroll |
+| Linha do tempo | Trajetória profissional em formato de esteira horizontal, com botões de rolagem acessíveis |
+| Animações | `IntersectionObserver` com efeito `reveal` ao rolar a página |
+| UX | Botão "voltar ao topo"; formulário de contato abre o cliente de e-mail com a mensagem pronta |
+| Acessibilidade | Skip link, foco visível (`:focus-visible`), suporte a `prefers-reduced-motion` e contraste cuidado sobre o fundo escuro |
 
 ---
 
@@ -60,12 +59,13 @@ portfolio/
 
 | # | ID | Conteúdo |
 |---|---|---|
-| 01 | `#biografia` | Trajetória profissional e linha do tempo |
-| 02 | `#projetos` | Cards de projetos com stack e impacto |
-| 03 | `#habilidades` | Grade de competências técnicas |
-| 04 | `#stack` | Stack técnico por categoria |
-| 05 | `#formacao` | Certificações e educação |
-| 06 | `#contato` | Redes sociais, status de disponibilidade e formulário |
+| 01 | `#biografia` | Resumo profissional e diferenciais |
+| 02 | `#experiencia` | Trajetória profissional (linha do tempo) |
+| 03 | `#projetos` | Cards de projetos autorais com stack e impacto |
+| 04 | `#habilidades` | Stack técnico por categoria |
+| 05 | `#formacao` | Formação acadêmica e idiomas |
+| 06 | `#certificacoes` | Certificações agrupadas por ano |
+| 07 | `#contato` | Redes sociais, status de disponibilidade e formulário |
 
 ---
 
@@ -106,12 +106,14 @@ xdg-open index.html
 
 ## 📌 Projetos em Destaque
 
-- **IA RTR** — Conciliação financeira automatizada com Streamlit, Python, APIs REST e SQL.
-- **Consultor Tributário AI** — Assistente jurídico com IA para Reforma Tributária (CE 132/2023), com dados atualizados.
+- **TEM Telecom Dashboard IA** — Plataforma em Python e Streamlit para gestão de contratos, faturas e indicadores de telecom, com assistente de IA e dashboards executivos.
+- **Assistente de IA para Telecom** — Aplicação web com Node.js, Gemini, upload de arquivos e scraping para análise de dados de telecomunicações.
+- **RTR Intelligence Pro** — Conciliação financeira automatizada com Streamlit, regras inteligentes e fuzzy matching.
+- **Ferramentas Python Corporativas** — Scripts de inventário, auditoria Windows/WMI/CrowdStrike e segurança operacional.
+- **Consultor Tributário AI** — Assistente de IA sobre a Reforma Tributária do Brasil (EC 132/2023), com dados atualizados.
 - **NEXUS IA** — Chat desktop com Python, CustomTkinter, LangChain e API Groq.
-- **Sistema de Gestão de Faturas** — Automação de faturas de telecom com OCR.
-- **Script de Coleta de Monitores** — Inventário técnico em rede corporativa com Python + PowerShell.
-- **Assistente de IA para Telecom** — Aplicação web com Node.js + Express, integração com Gemini, upload de arquivos e scraping.
+- **Sistema de Gestão de Faturas** — Automação de registro e controle de faturas de telecom com OCR.
+- **Monitor Info Collector** — Inventário de monitores em rede corporativa com Python + PowerShell.
 
 ---
 
