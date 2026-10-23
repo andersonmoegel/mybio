@@ -22,7 +22,7 @@ Acesse http://localhost:8080.
 
 ## Design e acessibilidade
 
-Layout responsivo com tema claro, tipografia de sistema, cartões de projetos e navegação mobile. Inclui link para pular ao conteúdo, foco visível, navegação por teclado, fechamento do menu com Escape, respeito a `prefers-reduced-motion` e estilos de impressão. Todo o conteúdo permanece disponível sem JavaScript. Links de contato abrem e-mail ou perfis profissionais; não há backend de mensagens ou rastreadores.
+Layout responsivo com tema escuro em azul profundo e ciano, tipografia de sistema, cartões de projetos e navegação mobile. Inclui link para pular ao conteúdo, foco visível, navegação por teclado, fechamento do menu com Escape, respeito a `prefers-reduced-motion` e estilos de impressão. Todo o conteúdo permanece disponível sem JavaScript. Links de contato abrem WhatsApp, e-mail ou perfis profissionais; não há backend de mensagens ou rastreadores.
 
 ## Manutenção
 
